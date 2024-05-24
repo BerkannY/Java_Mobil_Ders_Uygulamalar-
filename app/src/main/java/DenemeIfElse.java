@@ -1,15 +1,19 @@
 public class DenemeIfElse {
     public static void main(String[] args) {
 
-        int day = 3;
-        if  (day<=5){
+        int day = 0;
+
+         if(day==0){
+            System.out.println("Geçersiz gün");
+        }
+        else if  (day<=5){
             System.out.println("Hafta İçi");
         }
          else if (day<8){
             System.out.println("Hafta Sonu");
         }
-         else{
-            System.out.println("Geçersiz gün");
+         else {
+            System.out.println("Geçersiz Gün");
         }
 // gün kontrolü
 
