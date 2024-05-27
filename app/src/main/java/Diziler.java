@@ -13,7 +13,9 @@ public class Diziler {
             ogrenciAdi[i]=input.next();
         }
 
-       }
+
+
+    }
 
 
     }
