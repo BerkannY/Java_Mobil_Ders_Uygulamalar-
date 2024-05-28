@@ -1,3 +1,5 @@
+package com.berkan.deneme3;
+
 public class Ornek {
     public static void main(String[] args) {
         int ogrneciNo = 20;

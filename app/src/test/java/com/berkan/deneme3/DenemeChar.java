@@ -1,3 +1,5 @@
+package com.berkan.deneme3;
+
 public class DenemeChar {
     public static void main(String[] args) {
         /*char karakter= 'A';

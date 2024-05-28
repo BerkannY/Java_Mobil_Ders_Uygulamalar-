@@ -1,3 +1,5 @@
+package com.berkan.deneme3;
+
 public class TrueFalse {
     public static void main(String[] args) {
         int a=5;

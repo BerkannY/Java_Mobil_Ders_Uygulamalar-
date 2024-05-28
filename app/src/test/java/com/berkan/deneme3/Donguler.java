@@ -1,3 +1,5 @@
+package com.berkan.deneme3;
+
 public class Donguler {
     public static void main(String[] args) {
        /* for (int i=1; i<=10;i++){

@@ -1,3 +1,5 @@
+package com.berkan.deneme3;
+
 public class CarpimTablosu {
     public static void main(String[] args) {
         /*int a = 1;

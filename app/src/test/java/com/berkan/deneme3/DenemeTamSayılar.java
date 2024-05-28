@@ -1,3 +1,5 @@
+package com.berkan.deneme3;
+
 import static android.icu.lang.UCharacter.GraphemeClusterBreak.L;
 
 public class DenemeTamSayılar {

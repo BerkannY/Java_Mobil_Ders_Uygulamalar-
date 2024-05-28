@@ -1,3 +1,5 @@
+package com.berkan.deneme3;
+
 import java.util.Scanner;
 public class OrnekForIcınde {
         public static void main(String[] args) {
