@@ -28,19 +28,19 @@ public class DiziOrtalamaAlma {
         String kullaniciKontrol = input.next();
 
         boolean varyok = false;
-        int foundIndex = -1;
+        int ogrencibul = -1;
         for (int i = 0; i < kullaniciAd.length; i++) {
             if (kullaniciAd[i].equals(kullaniciKontrol)) {
                 varyok = true;
-                foundIndex = i;
+                ogrencibul = i;
                 break;
             }
         }
 
         if (varyok) {
-            System.out.println(kullaniciAd[foundIndex] + " isimli öğrencinin ortalaması: " + ortalama[foundIndex]);
+            System.out.println(kullaniciAd[ogrencibul] + " isimli öğrencinin ortalaması: " + ortalama[ogrencibul]);
         } else {
-            System.out.println("Dizide yok");
+            System.out.println("Böyle bir i yok");
         }
 
         input.close();
