@@ -6,7 +6,7 @@ public class AvukatMuvekkilOrnek {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        int arraysLength = 5;
+        int arraysLength = 2;
         int[] dosyaNumarasi = new int[arraysLength];
         String[] muvekkilAdi = new String[arraysLength];
         String[] durusmaYeri = new String[arraysLength];
@@ -25,7 +25,7 @@ public class AvukatMuvekkilOrnek {
         int muvekkilKontrol = input.nextInt();
 
         boolean varyok = false;
-        int muvekkilbul = -1;
+        int muvekkilbul = 0;
         for (int i = 0; i < dosyaNumarasi.length; i++) {
             if (dosyaNumarasi[i] == muvekkilKontrol) {
                 varyok = true;
