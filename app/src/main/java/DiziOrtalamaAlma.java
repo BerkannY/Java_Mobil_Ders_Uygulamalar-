@@ -10,6 +10,7 @@ public class DiziOrtalamaAlma {
         String[] kullaniciAd = new String[arraysLength];
         double[] ortalama = new double[arraysLength];
 
+
         for (int j = 0; j < arraysLength; j++) {
             System.out.println((j + 1) + ". Kullanıcıyı Giriniz:");
             kullaniciAd[j] = input.next();
@@ -19,9 +20,10 @@ public class DiziOrtalamaAlma {
             System.out.println((j + 1) + ". Kullanıcı için Final Notunu Giriniz:");
             finall[j] = input.nextDouble();
 
+
             // ORTALAMA ALMA
             ortalama[j] = ((vize[j] * 0.4) + (finall[j] * 0.6));
-            System.out.println(kullaniciAd[j] + " kullanıcısının ortalaması: " + ortalama[j]);
+            //System.out.println(kullaniciAd[j] + " kullanıcısının ortalaması: " + ortalama[j]);
         }
 
         System.out.println("Aranacak Öğrencinin İsmini Giriniz:");
