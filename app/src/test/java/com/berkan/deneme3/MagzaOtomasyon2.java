@@ -12,18 +12,24 @@ public class MagzaOtomasyon2 {
         ArrayList<Integer> urunStoklari = new ArrayList<>();
         System.out.println("Market Otomasyona Hoş Geldiniz");
         System.out.println("Yapmak İstediğiniz işlemi seçiniz");
-        while (1 == 1) {
-            System.out.println("1- Ürün Ekle");
-            System.out.println("2- Ürün Güncelle");
-            System.out.println("3- Ürün Sil");
-            System.out.println("4- Ürün Listesi");
-            System.out.println("5- Çıkış");
-            System.out.println("-----------------------------------------------------");
-            System.out.println("Sayı Giriniz...");
-            int secim = input.nextInt();
-            int sayac = 1;
+
+
+            while (1 == 1) {
+                System.out.println("1- Ürün Ekle");
+                System.out.println("2- Ürün Güncelle");
+                System.out.println("3- Ürün Sil");
+                System.out.println("4- Ürün Listesi");
+                System.out.println("5- Çıkış");
+                System.out.println("-----------------------------------------------------");
+                System.out.println("Sayı Giriniz...");
+                int secim = input.nextInt();
+
+                int sayac = 1;
+
+
 
                 if (secim == 1) {
+
                     // Ürün Ekleme
                     input.nextLine(); // Boş satırı temizle
                     System.out.println("Ürün Ekleme Sayfasına Hoş Geldiniz !");
@@ -41,12 +47,13 @@ public class MagzaOtomasyon2 {
 
                     System.out.println("Ürün başarıyla eklendi: " + urun);
                     sayac++;
-                    System.out.println("Üst Menü İçin 0, Yeni Ürün Eklemek İçin 1 Giriniz.");
+                    System.out.println("Üst Menü İçin 1,e basınız ");
                     int secim2 = input.nextInt();
                     if (secim2 == 0) {
                         break;
                     }
-                } else if (secim == 2) {
+                }
+                else if (secim == 2) {
 
                     // Ürün Güncelleme
                     input.nextLine(); // Boş satırı temizle
@@ -68,13 +75,14 @@ public class MagzaOtomasyon2 {
                         System.out.println("Ürün bulunamadı.");
                     }
                     sayac++;
-                    System.out.println("Üst Menü İçin 0, Yeni Ürün Güncellemek İçin 1 Giriniz.");
+                    System.out.println("Üst Menü İçin 1 e basınız,");
                     int secim2 = input.nextInt();
                     if (secim2 == 0) {
                         break;
                     }
 
-                } else if (secim == 3) {
+                }
+                else if (secim == 3) {
 
                     // Ürün Silme
                     input.nextLine(); // Boş satırı temizle
@@ -92,39 +100,41 @@ public class MagzaOtomasyon2 {
                         System.out.println("Ürün bulunamadı.");
                     }
                     sayac++;
-                    System.out.println("Üst Menü İçin 0, Yeni Ürün Silmek İçin 1 Giriniz.");
+                    System.out.println("Üst Menü İçin 1,e basınız ");
                     int secim2 = input.nextInt();
                     if (secim2 == 0) {
                         break;
                     }
 
-                } else if (secim == 4) {
+                }
+                else if (secim == 4) {
                     // Ürün Listesi
                     System.out.println("Ürün Listesi:");
                     for (int i = 0; i < urunAdlari.size(); i++) {
                         System.out.println("Ürün Adı: " + urunAdlari.get(i) + ", Fiyat: " + urunFiyatlari.get(i) + ", Stok: " + urunStoklari.get(i));
                     }
                     sayac++;
-                    System.out.println("Üst Menü İçin 0, Yeni Ürün Silmek İçin 1 Giriniz.");
+                    System.out.println("Üst Menü İçin 1 e basınız.");
                     int secim2 = input.nextInt();
                     if (secim2 == 0) {
                         break;
                     }
 
+                }
+                else if (secim == 5) {
+                    System.out.println("Çıkış Yapılıyor");
+                    break;
+                }
 
 
 
+            }
+
+
+
+            }
 
         }
-            if (secim==5){
-                //Çıkış
-                System.out.println("Çıkış Yapılıyor");
-                break;
-            }
-            else {
-                System.out.println("Geçerli Sayı Giriniz");
-                break;
-            }
-    }
-}
-}
+
+
+
